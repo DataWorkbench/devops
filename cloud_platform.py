@@ -167,7 +167,7 @@ class CloudPlatform(qingcloud.iaas.connection.APIConnection):
                        count=1,
                        target_user=None,
                        place_group_id=None,
-                       repl=None,
+                       repl="rpp-00000001",
                        **ignore):
         action = qingcloud.iaas.constants.ACTION_CREATE_VOLUMES
         valid_keys = ['size', 'volume_name', 'volume_type', 'count',
